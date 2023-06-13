@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WISHlist.page</title>
+        <title>WISHlist.</title>
         <meta charset="utf-8">
         <style>
             body {
@@ -16,6 +16,7 @@
                 font-style: oblique;
                 border-bottom: 5px solid pink;
                 padding: 30px;
+                padding-top: 66px;
                 margin: 0;
             }
             h3 {
@@ -31,15 +32,63 @@
                 position: relative;
                 background: pink;
             }
+            /*0613 add mediaquery & buttons*/
+            @media only screen and (max-width:800px) {
+                .main-div {
+                    width: 100%;
+                }
+                body {
+                padding: 0px;
+                padding-left: 22px;
+                padding-right: 22px;
+            }
+            }
+            .btn-group .button {
+                background-color: white; 
+                border: solid white;
+                text-align: center;
+                display: inline-block;
+                cursor: pointer;
+                float: right;
+                border-radius: 100%;
+                }
+            .btn-group .button:hover {
+                background-color: #ed98bc;
+                color: white;
+                }
+            /*
+                .btn-group .button {
+                background-color: white; 
+                border: 3px solid pink;
+                color: pink;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 17px;
+                cursor: pointer;
+                float: right;
+                margin: 5px;
+                }
+            .btn-group .button:hover {
+                background-color: #ed98bc;
+                color: white;
+                }
+            */
         </style>
     </head>
     <body>
+        <div class="btn-group">
+            <button class="button"><img src="enter.png" width="30px"></button>
+            <button class="button"><img src="smile.png" width="30px"></button>
+            <button class="button"><img src="home.png" width="30px"></button>
+          </div>
         <h2>WISHlist.</h2>
         <h3>ABOUT U</h3>
         <div class="main-div">
             <div id="border-left"></div>
         </div>
-        <p>This page will be the one that helps you organize your <strong style="color:pink">fav</strong> hobbies :) 
+        <p>This website helps you organize your wishlist and make your life better :)
         </p>    
     </body>
 </html>
